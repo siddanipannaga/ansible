@@ -2,7 +2,7 @@
   hosts : localhost
   vars_files :
   - variables-1.yaml
-   vars_files :
+  vars_files :
   - variables-2.yaml
   tasks:
   - name : check varaiable
