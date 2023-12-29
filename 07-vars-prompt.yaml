@@ -1,14 +1,14 @@
-name : vraibles prompt
-hosts : localhost
-vars_prompt :
-- name : username
-  prompt : please enter your name
-  private : false
-- name : password
-  prompt : please enter your passowrd
-  private : true
-tasks :
-- name : print and check the values
-  ansible.builtin.debug :
-    msg : " username is {{username}}, password is {{password}}"
+- name : variables prompt
+  hosts : localhost
+  vars_prompt :
+  - name : username
+    prompt : please enter your name
+    private : false
+  - name : password
+    prompt : please enter your passowrd
+    private : true
+  tasks :
+  - name : print and check the values
+    ansible.builtin.debug :
+      msg : " username is {{username}}, password is {{password}}"
 
