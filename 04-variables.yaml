@@ -1,0 +1,10 @@
+- name : PLAYBOOK variable
+  hosts : localhost
+  vars :
+    course : "shellscript"
+    Trainer : "chandu"
+    Duration : "120hrs"
+  tasks:
+  - name : check varaiable
+    ansible.builtin.debug:
+     msg : " Iam learning {{course}} from {{Trainer}} duartion is {{Duration}}"
