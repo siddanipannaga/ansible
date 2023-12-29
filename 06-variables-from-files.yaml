@@ -1,7 +1,8 @@
 - name : PLAYBOOK variable
   hosts : localhost
   vars_files :
-  - variables.yaml  
+  - variables-1.yaml
+  - variables-2.yaml  
   tasks:
   - name : check varaiable
     ansible.builtin.debug:
