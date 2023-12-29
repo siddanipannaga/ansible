@@ -2,7 +2,7 @@
   hosts : localhost
   vars_files :
   - variables-1.yaml
-    - variables-2.yaml
+  - variables-2.yaml
   tasks:
   - name : check varaiable
     ansible.builtin.debug:
