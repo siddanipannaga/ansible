@@ -9,9 +9,9 @@
   # - name : wishes
   #   prompt : please enter your wishes
   #   private : false
-  vars :
-    person: "chandu from play"
-    wishes: "good morning from play"
+  # vars :
+  #   person: "chandu from play"
+  #   wishes: "good morning from play"
   tasks:
   - name : check varaiables
   #   vars:
@@ -24,3 +24,4 @@
       # 2. task level
       # 3. from files
       # 4. prompt
+      # 5. vars
