@@ -10,5 +10,5 @@
     - {name : 'git' , state : 'present'}
     - {name : 'mysql', state : 'absent'}
     - {name : 'postfix', state : 'absent'}
-    - {name : 'ngins'}, state : 'present'
+    - {name : 'nginx', state : 'present'}
     
