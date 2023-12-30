@@ -2,13 +2,13 @@
   hosts : localhost
   vars_files:
   - variables.yaml
-  vars_prompt:
-  - name : person
-    prompt : please enter your name
-    private : false
-  - name : wishes
-    prompt : please enter your wishes
-    private : false
+  # vars_prompt:
+  # - name : person
+  #   prompt : please enter your name
+  #   private : false
+  # - name : wishes
+  #   prompt : please enter your wishes
+  #   private : false
   vars :
     person: "chandu from play"
     wishes: "good morning from play"
@@ -23,3 +23,4 @@
       # 1. command line level
       # 2. task level
       # 3. from files
+      # 4. prompt
