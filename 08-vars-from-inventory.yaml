@@ -1,0 +1,6 @@
+- name : PLAYBOOK variable
+  hosts : localhost
+  tasks:
+  - name : check varaiable
+    ansible.builtin.debug:
+      msg : " Iam learning {{course}} from {{trainer}} duartion is {{duration}}"
