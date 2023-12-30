@@ -13,11 +13,12 @@
     person: "chandu from play"
     wishes: "good morning from play"
   tasks:
-  - name : check varaiables
-    vars:
-      person: "chandu from task"
-      wishes: "good morning from task"
+  # - name : check varaiables
+  #   vars:
+  #     person: "chandu from task"
+  #     wishes: "good morning from task"
     ansible.builtin.debug:
       msg : "Hello {{person}}, Good {{wishes}}" 
 
-      # 1. command line
+      # 1. command line level
+      # 2. task level
