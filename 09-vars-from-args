@@ -1,0 +1,6 @@
+- name : PLAYBOOK variable
+  hosts : localhost
+  tasks:
+  - name : check varaiable
+    ansible.builtin.debug:
+      msg : "Hello {{person}},Good{{wishes}} 
