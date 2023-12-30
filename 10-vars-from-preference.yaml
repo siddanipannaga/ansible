@@ -19,3 +19,5 @@
       wishes: "good morning from task"
     ansible.builtin.debug:
       msg : "Hello {{person}}, Good {{wishes}}" 
+
+      # 1. command line
