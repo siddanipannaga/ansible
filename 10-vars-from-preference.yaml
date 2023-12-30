@@ -13,7 +13,7 @@
     person: "chandu from play"
     wishes: "good morning from play"
   tasks:
-  # - name : check varaiables
+  - name : check varaiables
   #   vars:
   #     person: "chandu from task"
   #     wishes: "good morning from task"
