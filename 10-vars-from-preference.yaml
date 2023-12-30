@@ -1,7 +1,7 @@
 - name : PLAYBOOK variable
   hosts : localhost
   vars_files:
-    - variables-1.yaml
+  - variables-1.yaml
   vars_prompt:
   - name : person
     prompt : please enter your name
