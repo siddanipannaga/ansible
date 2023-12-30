@@ -1,0 +1,29 @@
+- name : checking dtat types
+  hosts : localhost
+  vars :
+    name : chandu 
+    skills :
+    - devops
+    - shell
+    - ansible
+    - linux
+    Experience :
+      devops : 7
+      aws : 5
+    Trainer : true
+  tasks :
+  - name : print any key value pair
+    ansible.builtin.debug: 
+      msg : "name : {{name}}"
+
+  - name : print lsit
+    ansible.builtin.debug :
+      msg : " skills : {{skills}}"
+
+  - name : print map
+    ansible.builtin.debug :
+      msg : "experience : {{experience}}"
+
+  - name : print boolean
+    ansible.builtin.debug :
+      msg : "trainer {{trainer}}" 
