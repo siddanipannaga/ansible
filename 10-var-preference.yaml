@@ -1,0 +1,25 @@
+- name : PLAYBOOK variable
+  hosts : localhost
+  vars_files:
+    - variables_1.yaml
+  vars_prompt:
+  - name : person
+    prompt : please enter your name
+    private : false
+  - name : wishes
+    prompt : please enter your wishes
+    private : false
+  tasks :
+  - name : print and check the values
+    ansible.builtin.debug :
+      msg : " username is {{username}}, password is {{password}}"
+
+  vars :
+    person:"chandu from play"
+    wishes:"good morning from play"
+  tasks:
+  - name : check varaiable
+    person:"chandu from task"
+    wishes:"good morning from task"
+    ansible.builtin.debug:
+      msg : "Hello {{person}},Good {{wishes}}" 
