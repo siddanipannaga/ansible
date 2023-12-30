@@ -9,11 +9,6 @@
   - name : wishes
     prompt : please enter your wishes
     private : false
-  tasks :
-  - name : print and check the values
-    ansible.builtin.debug :
-      msg : " username is {{username}}, password is {{password}}"
-
   vars :
     person:"chandu from play"
     wishes:"good morning from play"
