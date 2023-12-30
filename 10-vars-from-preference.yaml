@@ -10,12 +10,12 @@
     prompt : please enter your wishes
     private : false
   vars :
-    person:"chandu from play"
-    wishes:"good morning from play"
+    person: "chandu from play"
+    wishes: "good morning from play"
   tasks:
   - name : check varaiables
     vars:
-      person:"chandu from task"
-      wishes:"good morning from task"
+      person: "chandu from task"
+      wishes: "good morning from task"
     ansible.builtin.debug:
       msg : "Hello {{person}}, Good {{wishes}}" 
